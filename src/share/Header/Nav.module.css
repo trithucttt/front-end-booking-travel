@@ -1,0 +1,260 @@
+.NavItems{
+    background-color: #fff;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 99;
+}
+
+.navLogoLink{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.navMenu{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+.navLinks {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 13px 21px;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+}
+.icon{
+    padding-right: 10px;
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+
+.iconLogin{
+    display: flex;
+    position: relative;
+}
+.navLinks i {
+    padding-right: 10px;
+    
+}
+.navLi {
+    list-style: none;
+}
+ .navLinks:hover{
+    background-color: rgb(97, 118, 118);
+    color: #fff;
+    border-radius: 4px ;
+    transition: all 0.2 ease-in-out;
+ }
+ .menuIcon{
+    display: none;  
+ }
+
+
+
+ .formSearch{
+    display: flex;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #060000;
+    border-radius: 30px;  
+    margin-right: 3px;
+   
+}
+.formInput{
+    border: none;
+    outline: none;
+    background-color: none;
+    width: 0px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 0px;
+    transition: all 0.25 ease-in-out;
+}
+
+.formInputActive{
+
+        border: none;
+        outline: none;
+        background-color: none;
+        width: auto;
+        border-radius: 15px;
+        font-size: 15px;
+    
+}
+.formButton{
+    background-color: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.straMNLink{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+}
+.liMenu:hover{
+    background-color: rgb(97, 118, 118);
+    border-radius: 4px ;
+    transition: all 0.2 ease-in-out;
+ }
+
+/* Thêm styles cho sub-menu trong file của bạn (ví dụ: styles.css) */
+
+.liMenu {
+    position: relative;
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 13px 21px;
+    /* white-space: nowrap; */
+    text-align: center; /* Đặt vị trí của liMenu là relative để sub-menu có thể được định vị tuyệt đối */
+  }
+  
+  /* Định dạng sub-menu */
+  .ulSubMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Đặt vị trí của sub-menu là absolute để nó sẽ nằm trên cùng của liMenu */
+    top: 100%; /* Hiển thị sub-menu ngay dưới liMenu */
+    right: 0;
+    display: none;
+    background-color:#fefdfd; /* Màu nền cho sub-menu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Đổ bóng cho sub-menu */
+    border-radius: 4px; /* Bo tròn góc của sub-menu */
+  }
+  
+  .liSubMenu {
+    padding: 10px;
+   
+  }
+  .linkSubMeu{
+    text-decoration: none;
+    color:#333;
+  }
+  .liSubMenu:hover{
+    background-color: rgb(97, 118, 118);
+    border-radius: 4px ;
+    transition: all 0.2 ease-in-out;
+ }
+  /* Hiển thị sub-menu khi liMenu được hover */
+  .liSubMenu:hover .ulSubMenu {
+    display: block;
+  }
+ @media screen and (max-width : 1014px) {
+    .NavItems{
+        z-index: 99;
+        background-color: #fff;
+    }
+    .menuIcon{
+        display: flex;
+        padding-right: 25px;
+    }
+    .navMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: rgb(118, 191, 215);
+        width : 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        text-align: center;
+        opacity: 0;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
+    }
+    .navMenuActive{
+        opacity: 1;
+        left: 0;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: rgb(118, 191, 215);
+        width : 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
+    }
+    .navLi {
+        list-style: none;
+    }
+    .navLinks{
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2 rem 0;
+        list-style:  none;
+        text-decoration: none;
+    }
+    .navLinks:hover{
+        background-color: rgb(77, 52, 19);
+        transition: none;
+    }
+    .ulSubMenu {
+        position: static;
+        display: none;
+        width: 100%; 
+        background: rgb(118, 191, 215);
+      }
+    
+      .liSubMenu {
+        padding: 10px;
+        text-align: center; /* Căn giữa nội dung của sub-menu */
+      }
+    
+      .liMenu:hover .ulSubMenu {
+        display: block;
+      }
+      .straMNLink{
+          text-decoration: none;
+          list-style: none;
+          cursor: pointer;
+          color: #222;
+          font-size: 1.2rem;
+          font-weight: 600;
+      }
+ }
+  
+ 
+  
+  
+  
+ 
+  
+ 
+  

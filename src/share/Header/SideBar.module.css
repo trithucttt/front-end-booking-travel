@@ -1,0 +1,79 @@
+.sideBar{
+    display: block;
+   position: fixed;
+   height:400px;
+   margin:150px 0px 0px 15px;
+   align-items: center;
+   text-align: center;
+   justify-content: space-between;
+   border-radius: 10px;
+   background-color: none;
+   /* border: 1px solid #333; */
+   transform: matrix(-50%);
+   
+}
+
+.hiddenListItemBar{
+    display: none;
+}
+.listItem{
+    border-radius: 10px;
+}
+.buttonChevronUp{
+    transition: all 0.2 ease-in-out;
+    border: none;
+    background-color: none;
+    font-size: 20px;
+   
+}
+.buttonChevronDown{  
+    /* margin-left: 50px; */
+    transform: matrix(-50%);
+    transition: all 0.3 ease;
+    border: none;
+    background-color: none;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.sideItem{
+    padding: 15px 0px 10px 0px;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 35px;
+   
+   
+}
+
+
+.tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 35px);
+    transform: translateX(-50%);
+    background-color: #333;
+    font-size: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+/* .sideItem:hover .tooltip  */
+
+.wrapper:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+    align-items: center;
+  }
+
+.wrapper{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+

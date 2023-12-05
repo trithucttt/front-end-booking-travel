@@ -1,0 +1,117 @@
+.container{
+    margin-top: 100px;
+    position: absolute;
+    
+}
+.PostDetail{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-left: 70px;
+    
+}
+.formDetail{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    
+}
+/* .detailHeader{
+    border: none;
+    margin: 20px;
+    border-radius: 10px;
+    margin-left:100px;
+     width: 500px;
+    height: 350px;
+} */
+.detailBody{
+    background: #f3f3f3;
+    max-width: 100%;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.detailBodyItem{
+    list-style: none;
+    margin: 10px;
+}
+
+.item3{
+    display: flex;
+}
+.articleQuantity{
+margin-right: 15px;
+}
+
+.articleButton{
+
+}
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 30px;
+    background: #21b7cb;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff !important;
+    box-shadow: 3px 3px 0px 0px rgba(31, 39, 70, 0.87)
+}
+.btn:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+.inDate{
+    margin-right: 10px;
+}
+.title{
+margin: 10px;
+}
+.detailContent{
+    margin-left:100px;
+    display: flex;
+    position: absolute;
+}
+.content{
+  
+}
+
+.imgcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    margin-left:100px;
+     width: 40%;
+    height: 300px;
+    list-style: none;
+  }
+  
+  .img {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 250px; 
+    border-radius: 5px;/* Ensure the image takes the full width of its container */
+  }
+  
+  .imgoptions {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .imgoptions img {
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }

@@ -1,0 +1,77 @@
+.straMNLink{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+}
+.liMenu:hover{
+    background-color: rgb(97, 118, 118);
+    border-radius: 4px ;
+    transition: all 0.2 ease-in-out;
+ }
+
+/* Thêm styles cho sub-menu trong file của bạn (ví dụ: styles.css) */
+
+.liMenu {
+    position: relative;
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 13px 21px;
+    /* white-space: nowrap; */
+    text-align: center; /* Đặt vị trí của liMenu là relative để sub-menu có thể được định vị tuyệt đối */
+  }
+  
+  /* Định dạng sub-menu */
+  .ulSubMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Đặt vị trí của sub-menu là absolute để nó sẽ nằm trên cùng của liMenu */
+    top: 100%; /* Hiển thị sub-menu ngay dưới liMenu */
+    left: 0;
+    display: none;
+    background-color: #fff; /* Màu nền cho sub-menu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Đổ bóng cho sub-menu */
+    border-radius: 4px; /* Bo tròn góc của sub-menu */
+  }
+  
+  .liSubMenu {
+    padding: 10px;
+  }
+  
+  /* Hiển thị sub-menu khi liMenu được hover */
+  .liMenu:hover .ulSubMenu {
+    display: block;
+  }
+  @media screen and (max-width: 850px) {
+    .ulSubMenu {
+      position: static;
+      display: none;
+      width: 100%; 
+      background: rgb(118, 191, 215);
+    }
+  
+    .liSubMenu {
+      padding: 10px;
+      text-align: center; /* Căn giữa nội dung của sub-menu */
+    }
+  
+    .liMenu:hover .ulSubMenu {
+      display: block;
+    }
+    .straMNLink{
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+        color: #222;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+  }
+
+  

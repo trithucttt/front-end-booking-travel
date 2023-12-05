@@ -1,0 +1,226 @@
+.bodyProfile {
+  background-color: #a4f2ed;
+  background-image: url(https://tourbooking.com.vn/timthumb.php?src=upload/hinhanh/785469304525994_1366x495.jpg&w=1366&h=450&zc=1&q=80);
+  display: flex;
+  background-size: cover; /* Thêm dòng này để đảm bảo hình nền không bị lập lại và tràn màn hình */
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 100px; /* Thêm padding cho nội dung trong profile */
+}
+.divider {
+  border: 1px solid #0e0909; 
+  width: 1px;
+  height: 70%;
+  margin: 0 auto; 
+}
+.avatarUser {
+  font-size: 18rem;
+  margin: 0 auto;
+  padding: 20px;
+  border: none;
+  border-radius: none;
+  margin-top: 20px;
+}
+
+.avatarUserActive {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 280px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.avatarContainer {
+  margin-right: 16px;
+}
+
+.content {
+  margin-top: auto;
+  width: 100%; /* Đảm bảo rằng nội dung chiếm đầy toàn bộ không gian có sẵn */
+  max-width: 600px; /* Giới hạn chiều rộng nội dung */
+  margin: 0 auto; /* Canh giữa nội dung trên màn hình */
+}
+
+.inputContainer {
+  margin-bottom: 20px; /* Tăng khoảng cách giữa các input */
+}
+
+.input {
+  width: 100%;
+  height: 40px; /* Điều chỉnh chiều cao input */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: rgb(33, 24, 24);
+  font-weight: 600;
+  margin-top: 10px;
+  border-bottom: 2px solid rgb(7, 3, 3);
+  transition: border-bottom 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.titleInput {
+  top: 10px; /* Điều chỉnh vị trí label */
+  left: 5px;
+  font-size: 1rem;
+  color: rgb(1, 2, 2);
+  font-weight: 700;
+  font-style: italic;
+  pointer-events: none;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+.invalidEmail {
+  border-bottom-color: red; /* Màu sắc khi email không hợp lệ */
+}
+.hiddenSave{
+  display: none;
+  
+}
+.btn {
+  border: 1px solid #00a2ff;
+  border-radius: 8px;
+  padding: 0.9em 1em;
+  background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  color: #12171b;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: none;
+  transition: border-color 0.2s, color 0.2s;
+  width: 40%;
+  margin: 10px 0;
+  margin-left: 250px; /* Điều chỉnh khoảng cách giữa các button */
+}
+
+.btn1{
+  border: none;
+  border-radius: 8px;
+  padding: 0.9em 1em;
+  background-color: transparent;
+  color: #12171b;
+  font-size: 30px;
+  cursor: pointer;
+  text-transform: none;
+  transition: border-color 0.2s, color 0.2s;
+  width: 40%;
+  margin: 10px 0;
+  margin-left: 260px; /* Điều chỉnh khoảng cách giữa các button */
+}
+
+.btn:hover {
+  border-color: #eeeeee;
+  border: 2px solid #00a2ff;
+  color: rgb(32, 23, 23);
+}
+
+.btn12{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn12 span {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.custombtn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+@media screen and (max-width: 1014px) {
+  .bodyProfile {
+    height: 100%;
+    width: 100%;
+    padding: 10px; /* Điều chỉnh padding khi màn hình nhỏ hơn */
+  }
+  .divider{
+    display: none;
+  }
+}

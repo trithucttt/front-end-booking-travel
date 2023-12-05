@@ -1,0 +1,21 @@
+.contact{
+  margin-top: 120px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .custom-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  .custom-button.active {
+    background-color: #e0f7fa;
+  }

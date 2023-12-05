@@ -1,0 +1,50 @@
+/* Thay thế bằng tên file CSS thực tế nếu cần */
+.commentSection {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .frame {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .newComment textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .btnComment {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btnComment:hover {
+    background-color: #2980b9;
+  }
+  

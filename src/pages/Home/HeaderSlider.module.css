@@ -1,0 +1,13 @@
+.HeaderSlider{
+    margin-top: 80px;
+    z-index: 1;
+}
+
+
+@media screen and (max-width : 1014px) {
+
+    .imageBanner{
+        height: 100%;
+        width: 100%;
+    }
+}
